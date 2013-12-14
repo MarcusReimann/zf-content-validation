@@ -48,12 +48,12 @@ class ContentValidationListenerTest extends TestCase
 
     public function nonBodyMethods()
     {
-        return [
+        return array(
             'get'     => ['GET'],
             'head'    => ['HEAD'],
             'options' => ['OPTIONS'],
             'delete'  => ['DELETE'],
-        ];
+        );
     }
 
     /**

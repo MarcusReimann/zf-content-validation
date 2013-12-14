@@ -4,8 +4,8 @@
  * @copyright Copyright (c) 2013 Zend Technologies USA Inc. (http://www.zend.com)
  */
 
-return [
-    'input_filters' => [
+return array(
+    'input_filters' => array(
         /*
          * An array of service name => config pairs.
          *
@@ -15,16 +15,16 @@ return [
          *
          * - http://zf2.readthedocs.org/en/latest/modules/zend.input-filter.intro.html
          */
-    ],
-    'service_manager' => [
-        'abstract_factories' => [
+    ),
+    'service_manager' => array(
+        'abstract_factories' => array(
             'ZF\ContentValidation\InputFilter\InputFilterAbstractServiceFactory',
-        ],
-        'factories' => [
+        ),
+        'factories' => array(
             'ZF\ContentValidation\ContentValidationListener' => 'ZF\ContentValidation\ContentValidationListenerFactory',
-        ],
-    ],
-    'zf-content-validation' => [
+        ),
+    ),
+    'zf-content-validation' => array(
         /*
          * An array of controller service name => config pairs.
          *
@@ -37,5 +37,5 @@ return [
          * to restrict by HTTP method, define validation groups by HTTP method,
          * etc.
          */
-    ],
-];
+    ),
+);
